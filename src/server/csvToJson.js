@@ -14,6 +14,8 @@ const CsvToJson = (csvPath) => {
     });
     jsonData.push(entry);
   });
+
   return jsonData;
 };
-console.log(CsvToJson("../data/matches.csv"));
+CsvToJson("../data/deliveries.csv");
+module.exports = { CsvToJson };
